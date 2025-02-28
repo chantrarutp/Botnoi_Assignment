@@ -1,0 +1,9 @@
+<div class="input-container">
+  <label for="input">Input : </label>
+  <input type="number" [(ngModel)]="inputNumber" min="1">
+  <button (click)="generatePattern()">Submit</button>
+</div>
+
+<div class="output-container">
+  <pre *ngFor="let line of star">{{ line }}</pre>
+</div>
